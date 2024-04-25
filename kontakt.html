@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knjižara</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="topnav">
+        <a class="" href="index.html">Početna strana</a>
+        <a class="" href="knjige.html">Knjige</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+        <a class="" href="galerija.html">Galerija</a>
+        <a class="" href="FAQ.html">FAQ</a>
+        <p>ⓒKnjižara <span>UNITED</span></p>
+    </div>
+        
+    
+    <form class="forma" method="get" name="MojaForma">
+            <p>Ime</p>
+            <input type="text" id="ime" name="ime"><br>
+
+            <p>Prezime</p>
+            <input type="text" id="prezime" name="prezime"><br>
+
+            <p>E-mail</p>
+            <input type="email" placeholder="example@gmail.com" title="E-mail adresa nije ispravno uneta!" id="email"><br>
+
+            <p>Password</p>
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Lozinka nije ispravno uneta!" id="pass"><br>
+
+            <p>Poruka</p>
+            <textarea id="poruka" name="poruka" cols="30" rows="10"></textarea><br><br>
+
+            <button type="submit" class="btn" onclick="Provera()">Pošalji</button>
+    </form>
+    
+</body>
+<script src="js.js"></script>
+</html>
